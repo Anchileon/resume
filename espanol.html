@@ -1,0 +1,402 @@
+</html>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch de Idioma</title>
+   <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Ignacio León</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          
+        </div>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="languageSwitch" checked onclick="switchLanguage()">
+          <label class="form-check-label text-white" for="languageSwitch" id="languageLabel">Cambiar a Inglés</label>
+        </div>
+      
+    </nav>
+
+    <!-- Header -->
+    <header
+      class="header bg-dark text-white text-center d-flex align-items-center justify-content-center pb-3"
+    >
+      <div class="container">
+        <h1 class="animate__animated animate__fadeIn">Ignacio León</h1>
+        <p class="animate__animated animate__fadeInUp">
+         Desarrollador Full-Stack en Desarrollo | Entusiasta Front-End
+        </p>
+        <a href="#projects" class="btn btn-outline-light mt-4">View My Work</a>
+      </div>
+    </header>
+    <section id="introduction" class="py-5 text-center bg-light">
+      <div class="container">
+        <img
+          src="./Captura de pantalla 2024-10-14 142131.png"
+          alt="Ignacio León"
+          class="rounded-circle mb-4"
+          width="150"
+        />
+        <h2>Bienvenido a Mi Portafolio</h2>
+        <p class="lead">
+          ¡Hola! Soy Ignacio León, un desarrollador Full-Stack en ciernes con una
+          pasión por construir aplicaciones amigables para el usuario y mejorar la
+          experiencia del usuario. Mi camino en el mundo tecnológico ha sido impulsado
+          por mi amor por resolver problemas y mi deseo de aprender.
+        </p>
+        <p>
+          Mi objetivo es aprovechar mis habilidades en desarrollo web para crear
+          soluciones digitales impactantes que satisfagan las necesidades de los
+          usuarios y impulsen el crecimiento empresarial.
+        </p>
+      </div>
+    </section>
+    
+    <section id="projects" class="py-5">
+      <div class="container">
+        <h2 class="text-center">Proyectos</h2>
+        <div class="filter-buttons text-center my-4">
+          <button class="m-1 btn btn-outline-dark filter-btn" data-filter="all">
+            Front-End
+          </button>
+          <button
+            class="btn btn-outline-dark filter-btn"
+            data-filter="front-end"
+          >
+            Back-End <i class="badge bg-secondary">Actual</i>
+          </button>
+          
+        </div>
+        <div class="row" id="project-cards">
+          <!-- Ejemplo Proyecto 1 -->
+          <div class="col-md-4 project-card" data-category="full-stack">
+            <div class="card">
+              <img
+                src="./Captura de pantalla 2024-10-19 202448.png"
+                class="card-img-top"
+                alt="Imagen del Proyecto"
+              />
+              <div class="card-body">
+                <h5 class="card-title">BuscaMaquinaria</h5>
+                <p class="card-text">
+                  Una plataforma para maquinaria pesada, gestionando ventas y leads.
+                  Desarrollé la página de inicio, precios y tutoriales de gestión de usuarios.
+                </p>
+                <a
+                  href="https://github.com/Anchileon/Buscamaq"
+                  class="btn btn-primary"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+    
+          <!-- Ejemplo Proyecto 2 -->
+          <div class="col-md-4 project-card" data-category="front-end">
+            <div class="card">
+              <img
+                src="./Captura de pantalla 2024-10-19 203136.png"
+                class="card-img-top"
+                alt="Imagen del Proyecto"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ecoplants</h5>
+                <p class="card-text">
+                  Construí un sitio de proyecto front-end responsivo utilizando Bootstrap y JavaScript para una
+                  plataforma de comercio electrónico especializada en plantas.
+                </p>
+                <a
+                  href="https://github.com/Anchileon/57700_Leon"
+                  class="btn btn-primary"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 project-card" data-category="front-end">
+            <div class="card">
+              <img
+                src="./Captura de pantalla 2024-10-19 203402.png"
+                class="card-img-top"
+                alt="Imagen del Proyecto"
+              />
+              <div class="card-body">
+                <h5 class="card-title">León & Manada</h5>
+                <p class="card-text">
+                  Construí un proyecto front-end responsivo utilizando Bootstrap y Sass para un sitio informativo de una empresa de movimiento de suelo.
+                </p>
+                <a
+                  href="https://github.com/Anchileon/leon_53805"
+                  class="btn btn-primary"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center">Skills</h2>
+        <ul class="list-inline text-center">
+          <li class="list-inline-item">
+            <span class="badge bg-primary">HTML5</span>
+          </li>
+          <li class="list-inline-item">
+            <span class="badge bg-primary">CSS3</span>
+          </li>
+          <li class="list-inline-item">
+            <span class="badge bg-primary">JavaScript (ES6+)</span>
+          </li>
+          <li class="list-inline-item">
+            <span class="badge bg-primary">ReactJS</span>
+          </li>
+          <li class="list-inline-item">
+            <span class="badge bg-primary">Bootstrap</span>
+          </li>
+          <li class="list-inline-item">
+            <span class="badge bg-primary">Git & GitHub</span>
+          </li>
+          <li class="list-inline-item">
+            <span class="badge bg-primary">SQL</span><i class="badge bg-secondary m-1">Soon</i>
+          </li>
+          <li class="list-inline-item">
+            <span class="badge bg-primary">Node.js</span><i class="badge bg-secondary m-1">Current</i>
+          </li>
+          <li class="list-inline-item">
+            <span class="badge bg-primary">AWS (Cloud Computing)</span><i class="badge bg-secondary m-1">Soon</i>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+<!-- Sección de Experiencia -->
+<section id="experience" class="py-5">
+  <div class="container">
+    <h2 class="text-center">Experiencia</h2>
+    <div class="accordion" id="experienceAccordion">
+      <!-- Proyecto Freelance -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            Freelance - Desarrollador Web | BuscaMaquinaria (Junio 2024 - Oct
+            2024)
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse show"
+          aria-labelledby="headingOne"
+          data-bs-parent="#experienceAccordion"
+        >
+          <div class="accordion-body">
+            <ul>
+              <li>Gestioné la información de productos y usuarios en la plataforma.</li>
+              <li>
+                Desarrollé páginas web estáticas utilizando HTML, CSS, e integré
+                JavaScript básico para interacciones de usuario.
+              </li>
+              <li>
+                Optimicé el SEO para mejorar el ranking en motores de búsqueda y
+                la visibilidad de la plataforma.
+              </li>
+              <li>
+                Colaboré con el cliente para diseñar una página de inicio y una
+                estructura de precios amigables para el usuario.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Negocio Familiar -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            Negocio Familiar - León & Manada (Nov 2020 - Jun 2024)
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingTwo"
+          data-bs-parent="#experienceAccordion"
+        >
+          <div class="accordion-body">
+            <ul>
+              <li>
+                Gestioné las operaciones comerciales y contables de la empresa.
+              </li>
+              <li>
+                Lideré la gestión de proyectos con empresas privadas y sectores
+                públicos.
+              </li>
+              <li>
+                Desarrollé estrategias de adquisición de clientes, resultando en
+                un mayor compromiso con los clientes.
+              </li>
+              <li>
+                Supervisé campañas de marketing y mejoras en el servicio al
+                cliente.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Hidden Group -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+          >
+            Gerente de Operaciones - The Hidden Group (Mar 2017 - Oct 2020)
+          </button>
+        </h2>
+        <div
+          id="collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingThree"
+          data-bs-parent="#experienceAccordion"
+        >
+          <div class="accordion-body">
+            <ul>
+              <li>
+                Gestioné RRHH, ventas, compras y contabilidad para múltiples
+                locales bajo The Hidden Group.
+              </li>
+              <li>
+                Implementé sistemas automatizados y optimicé procesos para
+                reducir costos operativos.
+              </li>
+              <li>
+                Aseguré el cumplimiento legal y normativo, mejorando la
+                estabilidad del negocio.
+              </li>
+              <li>
+                Gestioné nóminas y sistemas de pago para más de 50 empleados.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Agregar más experiencias aquí -->
+    </div>
+  </div>
+</section>
+
+<!-- Sección de Educación -->
+<section id="education" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center">Educación</h2>
+    <ul class="list-group">
+      <li class="list-group-item d-flex align-items-center">
+        <img src="./logocoder.png" alt="Logo CoderHouse" class="me-2" style="width: 40px; height: auto;">
+        CoderHouse - Desarrollo Full Stack (Enero 2024 - Presente)
+      </li>
+      <li class="list-group-item d-flex align-items-center">
+        <img src="./uade.png" alt="Logo UADE" class="me-2" style="width: 40px; height: auto;">
+        UADE - Licenciatura en Gestión (2015 - 2019)
+      </li>
+      <li class="list-group-item d-flex align-items-center">
+        <img src="./sworn.png" alt="Logo Sworn Junior College" class="me-2" style="width: 40px; height: auto;">
+        Sworn Junior College (1993 - 2009)
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-dark text-white">
+      <div class="container col text-center">
+        <h2>Contacto</h2>
+        <p>
+          Córdoba, Argentina <li class="list-inline-item"><a href="https://wa.me/5491121912920?text=Hola,%20quiero%20m%C3%A1s%20informaci%C3%B3n" target="_blank"><img src="./logowp.png" alt="WhatsApp"></a></li>|
+          <a href="mailto:Ignacioleon24@gmail.com" class="text-white"
+            >Ignacioleon24@gmail.com</a
+          >
+        </p>
+        
+        <div>
+          <a href="https://github.com/Anchileon" class="btn btn-outline-light m-2"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/ignacio-leon-27ab0515b/"
+            class="btn btn-outline-light m-2"
+            >LinkedIn</a
+          >
+        </div>
+    </section>
+
+    <!-- Bootstrap and Custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
