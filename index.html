@@ -74,7 +74,7 @@
     <section id="introduction" class="py-5 text-center bg-light">
       <div class="container">
         <img
-          src="./Captura de pantalla 2024-10-14 142131.png"
+          src="./assets/Captura de pantalla 2024-10-14 142131.png"
           alt="Ignacio León"
           class="rounded-circle mb-4"
           width="150"
@@ -93,92 +93,63 @@
       </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-5">
-      <div class="container">
-        <h2 class="text-center">Projects</h2>
-        <div class="filter-buttons text-center my-4">
-          <button class=" m-1 btn btn-outline-dark filter-btn" data-filter="all">
-            Front-End
-          </button>
-          <button
-            class="btn btn-outline-dark filter-btn"
-            data-filter="front-end"
-          >
-            Back-End <i class="badge bg-secondary">Current</i>
-          </button>
-          
-        </div>
-        <div class="row" id="project-cards">
-          <!-- Example Project 1 -->
-          <div class="col-md-4 project-card" data-category="full-stack">
-            <div class="card">
-              <img
-                src="./Captura de pantalla 2024-10-19 202448.png"
-                class="card-img-top"
-                alt="Project Image"
-              />
-              <div class="card-body">
-                <h5 class="card-title">BuscaMaquinaria</h5>
-                <p class="card-text">
-                  A platform for heavy machinery, managing sales and leads.
-                  Developed the landing page, pricing, and user management
-                  tutorials.
-                </p>
-                <a
-                  href="https://github.com/Anchileon/Buscamaq"
-                  class="btn btn-primary"
-                  >GitHub</a
-                >
-              </div>
-            </div>
-          </div>
+<!-- Projects Section -->
+<section id="projects" class="py-5">
+  <div class="container">
+    <h2 class="text-center">Projects</h2>
 
-          <!-- Example Project 2 -->
-          <div class="col-md-4 project-card" data-category="front-end">
-            <div class="card">
-              <img
-                src="./Captura de pantalla 2024-10-19 203136.png"
-                class="card-img-top"
-                alt="Project Image"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Ecoplants</h5>
-                <p class="card-text">
-                  Built a responsive front-end project site using Bootstrap and javascript for an
-                  e-commerce platform specializing in plants.
-                </p>
-                <a
-                  href="https://github.com/Anchileon/57700_Leon"
-                  class="btn btn-primary"
-                  >GitHub</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 project-card" data-category="front-end">
-            <div class="card">
-              <img
-                src="./Captura de pantalla 2024-10-19 203402.png"
-                class="card-img-top"
-                alt="Project Image"
-              />
-              <div class="card-body">
-                <h5 class="card-title">León & Manada</h5>
-                <p class="card-text">
-                  Built a responsive front-end project using Bootstrap and Sass for an informative business site
-                </p>
-                <a
-                  href="https://github.com/Anchileon/leon_53805"
-                  class="btn btn-primary"
-                  >GitHub</a
-                >
-              </div>
-            </div>
+
+    <div class="filter-buttons text-center my-4">
+      <button class="m-1 btn btn-outline-dark filter-btn active" data-filter="all">All</button>
+      <button class="m-1 btn btn-outline-dark filter-btn" data-filter="front-end">Front-End</button>
+      <button class="m-1 btn btn-outline-dark filter-btn" data-filter="back-end">Back-End</button>
+      <button class="m-1 btn btn-outline-dark filter-btn" data-filter="full-stack">Full-Stack</button>
+    </div>
+
+
+    <div class="row" id="project-cards">
+
+      <div class="col-md-4 project-card" data-category="full-stack">
+        <div class="card h-100">
+          <img src="./assets/Captura de pantalla 2024-10-19 202448.png" class="card-img-top img-fluid" alt="Project 1 Image" />
+          <div class="card-body">
+            <h5 class="card-title">BuscaMaquinaria</h5>
+            <p class="card-text">A platform for heavy machinery, managing sales and leads.
+              Developed the home page, pricing and user management tutorials.<br>They used the HTML code I created as the base for their Laravel project.</p>
+            <a href="https://github.com/Anchileon/Buscamaq" class="btn btn-primary">GitHub</a>
+            <a href="https://buscamaquinaria.com/pricing" class="btn btn-primary">Bmaq</a>
           </div>
         </div>
       </div>
-    </section>
+
+
+      <div class="col-md-4 project-card" data-category="front-end">
+        <div class="card h-100">
+          <img src="./assets/Captura de pantalla 2024-10-19 203136.png" class="card-img-top img-fluid" alt="Project 2 Image" />
+          <div class="card-body">
+            <h5 class="card-title">Ecoplants</h5>
+            <p class="card-text">A responsive front-end project using ReactJS for a
+              e-commerce platform specialized in plants.
+              <br>What started as a JS Vanilla project improved to a Reactjs App</p>
+            <a href="https://github.com/Anchileon/ecoplants-60025" class="btn btn-primary">GitHub</a>
+            <a href="https://ecoplants60025.netlify.app" class="btn btn-primary">SPA</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 project-card" data-category="front-end">
+        <div class="card h-100">
+          <img src="./assets/Captura de pantalla 2024-10-19 203402.png" class="card-img-top img-fluid" alt="Project 3 Image" />
+          <div class="card-body">
+            <h5 class="card-title">León & Manada</h5>
+            <p class="card-text"> A responsive front-end project using Bootstrap and Sass for an informative site for a soil moving company.</p>
+            <a href="https://github.com/Anchileon/leon_53805" class="btn btn-primary">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- Skills Section -->
     <section id="skills" class="bg-light py-5">
@@ -357,15 +328,15 @@
         <h2 class="text-center">Education</h2>
         <ul class="list-group">
           <li class="list-group-item d-flex align-items-center">
-            <img src="./logocoder.png" alt="Logo CoderHouse" class="me-2" style="width: 40px; height: auto;">
+            <img src="./assets/logocoder.png" alt="Logo CoderHouse" class="me-2" style="width: 40px; height: auto;">
             CoderHouse - Full Stack Development (January 2024 - Present)
           </li>
           <li class="list-group-item d-flex align-items-center">
-            <img src="./uade.png" alt="Logo UADE" class="me-2" style="width: 40px; height: auto;">
+            <img src="./assets/uade.png" alt="Logo UADE" class="me-2" style="width: 40px; height: auto;">
             UADE - Bachelor Degree in Management (2015 - 2019)
           </li>
           <li class="list-group-item d-flex align-items-center">
-            <img src="./sworn.png" alt="Logo Sworn Junior College" class="me-2" style="width: 40px; height: auto;">
+            <img src="./assets/sworn.png" alt="Logo Sworn Junior College" class="me-2" style="width: 40px; height: auto;">
             Sworn Junior College (1993 - 2009)
           </li>
         </ul>
@@ -373,15 +344,28 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-dark text-white">
+    <footer id="contact" class="py-1 bg-dark text-white">
       <div class="container col text-center">
         <h2>Contact</h2>
-        <p>
-          Córdoba, Argentina <li class="list-inline-item"><a href="https://wa.me/5491121912920?text=Hola,%20quiero%20m%C3%A1s%20informaci%C3%B3n" target="_blank"><img src="./logowp.png" alt="WhatsApp"></a></li>|
-          <a href="mailto:Ignacioleon24@gmail.com" class="text-white"
-            >Ignacioleon24@gmail.com</a
-          >
+        <div>
+          <p>
+          Córdoba, Argentina
         </p>
+          <ul class="list-inline" style="display: inline;">
+            <li class="list-inline-item">
+              <a href="https://wa.me/5491121912920?text=Hola,%20quiero%20m%C3%A1s%20informaci%C3%B3n" target="_blank">
+                <img src="./assets/logowp.png" alt="WhatsApp">
+              </a>
+            </li>
+            <li class="list-inline-item">|</li>
+            <li class="list-inline-item">
+              <a href="mailto:Ignacioleon24@gmail.com?subject=Consulta&body=Hola%20Ignacio" class="text-white">
+                Ignacioleon24@gmail.com
+              </a>
+            </li>
+          </ul>
+        </div>
+        
         
         <div>
           <a href="https://github.com/Anchileon" class="btn btn-outline-light m-2"
@@ -393,9 +377,10 @@
             >LinkedIn</a
           >
         </div>
-    </section>
-
-    <!-- Bootstrap and Custom JS -->
+        <div class="text-center">
+          <p class="mt-4">&copy; 2024 Ignacio León. All Rights Reserved.</p>
+        </div>
+      </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="scripts.js"></script>
   </body>
